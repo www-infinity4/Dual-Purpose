@@ -1,0 +1,102 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Infinity Scientific Methods and Robotics Engineering Portal">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'">
+  <title>Infinity Science & Robotics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">Infinity Science & Robotics</div>
+    <button id="menuButton" class="menu-button" type="button" aria-controls="siteNav" aria-expanded="false">Menu</button>
+    <nav id="siteNav" aria-label="Primary">
+      <a href="#method">Method</a><a href="#claims">Claims</a><a href="#visuals">Visuals</a><a href="#robots">Robots</a><a href="#vault">Boron Vault</a><a href="#security">Security</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Consensus · Build · Expand · Deliver</p>
+        <h1>Turn ambitious scientific ideas into measurable engineering.</h1>
+        <p class="lede">A local-first research portal for hypotheses, graphs, tutorials, robot designs, device telemetry, and hardened publication.</p>
+        <div class="hero-actions"><a class="button primary" href="#claims">Open claim ledger</a><a class="button" href="README.md">Read project guide</a></div>
+      </div>
+      <div class="orb" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <section id="method" class="section">
+      <div class="section-heading"><p class="eyebrow">Scientific discipline</p><h2>Preserve the idea. Separate it from the evidence.</h2></div>
+      <div class="grid four">
+        <article class="card"><b>1. Consensus</b><p>Classify established knowledge, engineering inference, hypotheses, speculation, and rejected claims.</p></article>
+        <article class="card"><b>2. Build</b><p>Translate each claim into a measurable prediction, controls, sensors, and failure criteria.</p></article>
+        <article class="card"><b>3. Expand</b><p>Add datasets, calibrated instruments, simulations, robot subsystems, and independent review.</p></article>
+        <article class="card"><b>4. Deliver</b><p>Publish raw logs, uncertainty, diagrams, test procedures, and signed release artifacts.</p></article>
+      </div>
+    </section>
+
+    <section id="claims" class="section panel">
+      <div class="section-heading"><p class="eyebrow">Interactive claim ledger</p><h2>What is known, what is proposed, and what would prove it?</h2></div>
+      <div class="filters" role="group" aria-label="Claim filters">
+        <button class="chip active" data-filter="All">All</button><button class="chip" data-filter="Established">Established</button><button class="chip" data-filter="Testable hypothesis">Hypotheses</button><button class="chip" data-filter="Rejected by current evidence">Rejected</button>
+      </div>
+      <div id="claimList" class="claim-list" aria-live="polite"></div>
+      <div class="note"><strong>Magnesium → nitrogen:</strong> under ordinary chemistry, magnesium does not become nitrogen. A resonance-based nuclear transition remains an extraordinary hypothesis requiring isotope-sensitive measurements, mass balance, contamination controls, and independent replication.</div>
+    </section>
+
+    <section id="visuals" class="section">
+      <div class="section-heading"><p class="eyebrow">Graphs, charts, and tutorials</p><h2>Explore structures without hiding uncertainty.</h2></div>
+      <div class="visual-grid">
+        <article class="canvas-card"><div><h3>Wave packet laboratory</h3><p>Adjust packet width to see the reciprocal relationship between position localization and momentum spread.</p></div><label>Localization <input id="sigma" type="range" min="10" max="90" value="42"></label><canvas id="waveCanvas" width="760" height="300" aria-label="Wave packet chart"></canvas></article>
+        <article class="canvas-card"><div><h3>Catalan growth</h3><p>Counts recursive structures such as valid parenthesizations and polygon triangulations.</p></div><canvas id="catalanCanvas" width="760" height="300" aria-label="Catalan number chart"></canvas></article>
+        <article class="canvas-card"><div><h3>Evidence ladder</h3><p>A mechanism moves upward only when stronger evidence survives controls and replication.</p></div><canvas id="evidenceCanvas" width="760" height="300" aria-label="Evidence ladder chart"></canvas></article>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/images/quantum-history.jpg" alt="Illustrated history of quantum mechanics"><figcaption>Quantum mechanics timeline</figcaption></figure>
+        <figure><img src="assets/images/quantum-abcs.jpg" alt="Quantum mechanics concepts alphabet chart"><figcaption>Quantum concept glossary</figcaption></figure>
+        <figure><img src="assets/images/catalan-number.jpg" alt="Catalan number explanation"><figcaption>Recursive combinatorics</figcaption></figure>
+        <figure><img src="assets/images/raychaudhuri-equation.jpg" alt="Raychaudhuri equation explanation"><figcaption>Expansion and focusing</figcaption></figure>
+        <figure><img src="assets/images/einstein-tensor.jpg" alt="Einstein tensor explanation"><figcaption>Curvature and matter-energy</figcaption></figure>
+        <figure><img src="assets/images/hypercomplex-number-systems.png" alt="Nested hypercomplex number systems"><figcaption>Algebraic dimensional ladder</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="robots" class="section panel">
+      <div class="section-heading"><p class="eyebrow">Robotics engineering</p><h2>A robot should be imaginative at the mission layer and deterministic at the safety layer.</h2></div>
+      <div class="architecture">
+        <div class="layer"><b>Mission</b><span>Goal, authorization, forbidden actions</span></div>
+        <div class="layer"><b>Planning</b><span>Bounded steps and simulation</span></div>
+        <div class="layer"><b>Control</b><span>Motors, valves, timing, closed loops</span></div>
+        <div class="layer"><b>Sensing</b><span>Position, force, heat, gas, current, pressure</span></div>
+        <div class="layer critical"><b>Independent safety</b><span>E-stop, watchdog, interlocks, passive containment</span></div>
+        <div class="layer"><b>Evidence</b><span>Raw logs, calibration, hashes, firmware version</span></div>
+      </div>
+      <div class="tutorial"><h3>Prototype ladder</h3><ol><li>Simulation</li><li>Low-energy mock-up</li><li>Sensor validation</li><li>Closed-loop prototype</li><li>Contained endurance test</li><li>Independent review</li><li>Limited pilot</li></ol></div>
+    </section>
+
+    <section id="vault" class="section">
+      <div class="section-heading"><p class="eyebrow">Boron Vault</p><h2>A safe-wallet concept built on cryptography—not magical material claims.</h2></div>
+      <div class="vault-grid">
+        <article class="vault-card"><span class="status">WATCH-ONLY DEMO</span><h3>Vault balance</h3><div class="balance">0.0000</div><p>No seed phrase, private key, or signing capability exists in this website.</p><button id="simulateButton" class="button primary" type="button">Simulate a transaction review</button><div id="simulation" class="simulation" hidden></div></article>
+        <article class="card"><h3>Production design</h3><ul><li>Hardware-backed or offline keys</li><li>Multisignature approval</li><li>Human-readable transaction simulation</li><li>Address allowlists and spending limits</li><li>Separate viewing, signing, and broadcasting systems</li></ul><a href="docs/BORON_VAULT.md">Open wallet architecture</a></article>
+      </div>
+    </section>
+
+    <section id="security" class="section panel">
+      <div class="section-heading"><p class="eyebrow">Security without false promises</p><h2>No system is impossible to attack. A good system is small, separated, auditable, and recoverable.</h2></div>
+      <div class="grid three"><article class="card"><h3>Minimize</h3><p>Static files, no trackers, no third-party JavaScript, no secrets, no server-side execution.</p></article><article class="card"><h3>Separate</h3><p>Website, wallet signer, experiment controller, and robot controller remain independent.</p></article><article class="card"><h3>Verify</h3><p>Signed releases, hashes, protected deployment credentials, raw telemetry, and immutable logs.</p></article></div>
+      <p><a href="SECURITY.md">Read the complete threat model</a> · <a href="docs/DEPLOYMENT.md">Read hardened deployment guidance</a></p>
+    </section>
+  </main>
+
+  <footer>Infinity Scientific Methods & Robotics Engineering Portal · Local-first demonstration · 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>
